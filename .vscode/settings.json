@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "plyconfig.json": "jsonc"
+    },
+    "restoreTerminals.terminals": [
+        {
+          "splitTerminals": [
+            {
+              "name": "backend",
+              "commands": ["docker compose up -d","npx prisma migrate dev","npx prisma generate", "nodemon"]
+            },
+            {
+              "name": "frontend",
+              "commands": ["cd client","npm run dev"]
+            }
+          ]
+        }
+    ]
+
+}
